@@ -1,0 +1,56 @@
+[
+  {
+    "shoppingId": "8702a5fb22764982b5d5e920007cf1af",
+    "flightGroupInfoList": {
+      "arriveMultCityName": "string;",
+      "departDateTimeFormat": "string;",
+      "departMultCityName": "string;",
+      "flightTripTitle": "string;",
+      "duration": "string;",
+      "dDateFormat": "string;",
+      "flightSegments": [
+        {
+          "aDateTime": "2022-02-11T01:05:00+08:00",
+          "dDateTime": "2022-02-10T20:25:00+08:00",
+          "dCityInfo": { "code": "", "name": "" },
+          "aCityInfo": { "code": "", "name": "" },
+          "dPortInfo": { "code": "YJE", "name": "", "terminal": "T0" },
+          "aPortInfo": { "code": "YJV", "name": "", "terminal": "T0" },
+          "acrossDays": 1,
+          "airlineInfo": { "code": "9B", "name": "9B", "isLCC": false },
+          "craftInfo": {
+            "name": "",
+            "minSeats": null,
+            "maxSeats": null,
+            "widthLevel": "",
+            "craftType": ""
+          },
+          "cabinClass": "Economy",
+          "subClass": "S",
+          "durationInfo": { "hour": "04", "min": "40" },
+          "transferDurationInfo": null,
+          "stopInfoList": null,
+          "flightNo": "4118",
+          "segmentNo": 1
+        }
+      ]
+    },
+    "policyDetailInfo": {
+      "avgPrice": 0,
+      "ticketDeadlineType": 1,
+      "adultPrice": { "salePrice": "80.00", "tax": "0.00" },
+      "childPrice": { "salePrice": "80.00", "tax": "0.00" },
+      "infantPrice": { "salePrice": "80.00", "tax": "0.00" },
+      "limitInfo": {
+        "adultLimitInfo": null,
+        "childLimitInfo": null,
+        "availableSeatCount": 0,
+        "nationalityLimit": [],
+        "nationalityLimitType": 0
+      },
+      "productNoticeInfo": null,
+      "noticeInfoList": [],
+      "ticketDeadlineInfo": null
+    },
+    "policyInfoList": null
+}]

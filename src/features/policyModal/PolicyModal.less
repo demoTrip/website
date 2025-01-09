@@ -1,0 +1,43 @@
+.modal-policy-wrapper {
+  max-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  padding-right: 15px;
+  h4 {
+    color: #480808;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .box {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #dadfe6;
+      margin-bottom: 10px;
+
+      th {
+        padding: 16px;
+        background: #faf5f5;
+        text-align: left;
+        border-top: 1px solid #dadfe6;
+        color: #480808;
+      }
+      td {
+        padding: 16px;
+        border: 1px solid #dadfe6;
+        color: #480808;
+        
+        &.label {
+          width: 120px;
+        }
+        span {
+          display: block;
+          &:last-of-type {
+            color: #6b8299;
+          }
+        }
+      }
+    }
+  }
+}

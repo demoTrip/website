@@ -1,0 +1,153 @@
+@import "~antd/dist/antd.less";
+
+.App {
+  text-align: center;
+  background: #faf5f5;
+  min-width: 1252px;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+
+  .ant-tag-blue {
+    background: #ffe5e2;
+    border-color: #99344130;
+    color: #993441;
+  }
+}
+
+.global-loading {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 200px auto;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #455873;
+  span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #a83333;
+    border-top-color: rgba(235, 30, 30, 0.2);
+    border-right-color: rgba(235, 30, 30, 0.2);
+    border-bottom-color: rgba(235, 30, 30, 0.2);
+    border-radius: 100%;
+    animation: circle infinite 0.75s linear;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.footer-wrapper {
+  background: #fff;
+}
+
+.app-container {
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icon-person {
+  background: url("/static/image/home/person.png");
+}
+.icon-trip {
+  background: url("/static/image/home/trip.png");
+}
+.icon-seat {
+  background: url("/static/image/home/seat.png");
+}
+
+.ant-modal-wrap .ant-modal-confirm-body .ant-modal-confirm-title {
+  color: @primary-color;
+  font-size: 18px;
+}
+
+.ant-modal-wrap .ant-modal-content {
+  border-radius: 8px;
+}
+
+.assistance-modal {
+  .ant-modal-confirm-body
+    > .anticon
+    + .ant-modal-confirm-title
+    + .ant-modal-confirm-content {
+    margin-left: 0;
+  }
+  img {
+    width: 656px;
+  }
+}
+
+.cbtn {
+  background: @primary-color;
+  border-radius: 4px;
+  padding: 6px 16px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  &:hover {
+    background: @primary-color;
+    color: #fff;
+  }
+}
+
+.clink {
+  margin: 0 5px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.woot-widget-bubble {
+  background-color: @primary-color !important;
+}

@@ -1,0 +1,239 @@
+.detail-page-wrappr {
+  padding: 0 30px;
+  background: #faf5f5;
+  max-width: 1100px;
+  margin: 10px auto 0;
+  display: flex;
+  .left-content {
+    width: 768px;
+    .top-detail-info {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 24px;
+      text-align: left;
+      .number {
+        color: #26292b;
+      }
+    }
+    .top-city-info {
+      height: 88px;
+      border-radius: 2px 2px 0 0;
+      text-shadow: 0 2px 4px #480808b3;
+      padding: 16px 24px;
+      color: #fff;
+      text-align: left;
+      .city {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+    }
+    .top-flight-divide {
+      background: #fff;
+      height: 20px;
+    }
+    .top-flight-info {
+      padding: 24px 24px 12px 24px;
+      background: #fff;
+      position: relative;
+      box-shadow: 0 4px 8px 0 #45587300;
+      transition: box-shadow 0.5s;
+      .part {
+        display: flex;
+        margin-bottom: 15px;
+        color: #480808;
+      }
+      .left-box {
+        display: flex;
+        align-items: flex-start;
+        flex: 1 1 0;
+        .f-info-airline {
+          display: flex;
+          align-items: center;
+          flex-grow: 2;
+          .airline-logo {
+            flex: 0 0 32px;
+            width: 32px;
+            height: 32px;
+            align-self: center;
+          }
+
+          .f-info-desc {
+            padding-left: 8px;
+            .f-info-time {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+
+              .timeSplit {
+                margin: 0 5px;
+              }
+            }
+            .f-airline {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              color: #000000;
+              margin-top: 4px;
+              margin-right: 8px;
+            }
+            .f-name {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              color: #8592a6;
+              margin-top: 4px;
+              margin-right: 8px;
+            }
+          }
+        }
+        .f-info-duration {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 16px;
+          padding-left: 8px;
+          flex-grow: 2;
+          .time {
+            font-weight: bold;
+          }
+          .ant-btn {
+            color: #8592a6;
+            font-size: 14px;
+            padding: 0;
+            text-align: left;
+            line-height: 18px;
+          }
+        }
+        .f-info-stop {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 16px;
+          flex-grow: 6;
+          .stop-text {
+            font-weight: bold;
+          }
+          .stop-code {
+            position: relative;
+            margin-top: 4px;
+            cursor: pointer;
+            .code {
+              margin-right: 5px;
+              color: #8592a6;
+            }
+          }
+        }
+      }
+    }
+    .top-policy-info {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      margin-bottom: 10px;
+      .policy-segmentItem {
+        width: 50%;
+        flex: none;
+        position: relative;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        cursor: pointer;
+        p {
+          font-weight: bold;
+          margin-bottom: 0px;
+        }
+        .ant-btn-link {
+          padding: 0;
+          height: 20px;
+        }
+      }
+    }
+    .center-fillin {
+      background: #fff;
+      margin-top: 10px;
+      padding: 24px;
+      text-align: left;
+      .center-fillin-context {
+        margin-top: 4px;
+      }
+      .require-info {
+        background: #faf5f5;
+        border-radius: 2px;
+        color: #6b8299;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .passenger-form {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #faf5f5;
+        .ant-space {
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .top-box {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            .ant-btn {
+              height: 24px;
+              line-height: 24px;
+              padding: 0 10px;
+              font-size: 12px;
+              & > .anticon + span {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+        .ant-form-item {
+          width: 50%;
+          input {
+            font-weight: bold;
+          }
+        }
+        .ant-input-borderless,
+        .ant-select-selection-search {
+          border-bottom: 1px solid #8b96a5;
+          padding: 5px 0;
+          font-weight: bold;
+        }
+        .ant-select-selection-item {
+          font-weight: bold;
+        }
+        .ant-picker {
+          width: 100%;
+          input {
+            border-bottom: 1px solid #8b96a5;
+            height: 31px;
+          }
+        }
+      }
+    }
+    .btn-next {
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 14px 0;
+    }
+  }
+  .right-content-wrapper {
+    flex-grow: 1;
+  }
+  .right-content {
+    padding: 16px;
+    background: #fff;
+    margin-left: 16px;
+    text-align: left;
+    border-radius: 8px;
+  }
+}

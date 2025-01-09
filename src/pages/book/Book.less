@@ -1,0 +1,431 @@
+.book-page-wrappr {
+  padding: 0 30px;
+  background: #faf5f5;
+  max-width: 1300px;
+  margin: 10px auto 0;
+  display: flex;
+  .left-content {
+    width: 868px;
+    .flight-top-info {
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px 0px #dbdbdb;
+    }
+    .top-city-info {
+      height: 88px;
+      background: url("http://demoTrip.com/static/image/city/AAC_960_210.jpg");
+      background-position: center;
+      border-radius: 2px 2px 0 0;
+      text-shadow: 0 2px 4px #480808b3;
+      padding: 16px 24px;
+      color: #fff;
+      text-align: left;
+      position: relative;
+      .city-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .city-image-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          -90deg,
+          rgba(15, 41, 77, 0) 0%,
+          rgba(15, 41, 77, 0.6) 100%
+        );
+      }
+      .city {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .ant-btn {
+          margin-left: auto;
+          display: block;
+          color: #fff;
+          padding: 0;
+          height: auto;
+          line-height: initial;
+          span:not(.anticon) {
+            transition: all 0.5s;
+            border-bottom: 1px solid hsla(0, 0%, 100%, 0);
+          }
+          &:hover {
+            span:not(.anticon) {
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+      }
+      .pass {
+        position: relative;
+      }
+    }
+    .top-flight-info {
+      padding: 24px;
+      background: #fff;
+      position: relative;
+      transition: box-shadow 0.5s;
+      cursor: pointer;
+      &.active {
+        box-shadow: 0 4px 8px 0 rgb(69 88 115 / 12%);
+      }
+      .part {
+        display: flex;
+        margin-bottom: 15px;
+        color: #480808;
+      }
+      .left-box {
+        display: flex;
+        align-items: flex-start;
+        flex: 1 1 0;
+        .f-info-airline {
+          display: flex;
+          align-items: center;
+          flex-grow: 2;
+          .airline-logo {
+            flex: 0 0 32px;
+            width: 32px;
+            height: 32px;
+            align-self: center;
+          }
+
+          .f-info-desc {
+            padding-left: 8px;
+            .f-info-time {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+              text-align: left;
+              .timeSplit {
+                margin: 0 5px;
+              }
+            }
+
+            .f-name {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              color: #8592a6;
+              margin-top: 4px;
+              margin-right: 8px;
+            }
+          }
+        }
+        .f-info-duration {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 16px;
+          padding-left: 8px;
+          flex-grow: 2;
+          .time {
+            font-weight: bold;
+            span {
+              margin-right: 5px;
+            }
+          }
+          .ant-btn {
+            color: #8592a6;
+            font-size: 14px;
+            padding: 0;
+            text-align: left;
+            line-height: 18px;
+          }
+        }
+        .f-info-stop {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 16px;
+          flex-grow: 6;
+          .stop-text {
+            font-weight: bold;
+          }
+          .stop-code {
+            position: relative;
+            margin-top: 4px;
+            cursor: pointer;
+            color: #8592a6;
+            border-bottom: 1px dashed #8592a6;
+            .code {
+              margin-right: 5px;
+            }
+            &:hover {
+              color: #5f6977;
+            }
+          }
+        }
+        .btn-detail {
+          .anticon {
+            margin-left: 4px;
+          }
+          &:hover {
+            span,
+            svg {
+              color: #813a3a;
+            }
+          }
+        }
+      }
+    }
+    .top-policy-info {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px 0px #dbdbdb;
+      .policy-item {
+        width: 33.33%;
+        flex: none;
+        position: relative;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        cursor: pointer;
+        p {
+          font-weight: bold;
+          margin-bottom: 0px;
+        }
+        .ant-btn-link {
+          padding: 0;
+          height: 20px;
+        }
+        .link-alert {
+          color: "#ff6f00";
+          padding: 0;
+          height: 20px;
+        }
+      }
+    }
+    .top-book-tips {
+      border-radius: 2px;
+      padding: 20px;
+      background: #ffffffcc;
+      display: flex;
+      flex-direction: column;
+      .tips-item {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 10px;
+        letter-spacing: 0.4px;
+        .title {
+          font-weight: bold;
+          color: @primary-color;
+        }
+      }
+    }
+    .bottom-assistance {
+      padding: 24px;
+      background: #fff;
+      position: relative;
+      box-shadow: 0 2px 8px 0px #dbdbdb;
+      transition: box-shadow 0.5s;
+      margin-top: 10px;
+      text-align: left;
+      .title {
+        font-weight: 700;
+        font-size: 24px;
+        color: #480808;
+        margin-bottom: 0;
+      }
+      .desc {
+        margin: 10px 0;
+      }
+      .clink {
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+    .center-fillin {
+      box-shadow: 0 2px 8px 0px #dbdbdb;
+      border-radius: 2px 2px 0 0;
+      background: #fff;
+      margin-top: 10px;
+      padding: 24px;
+      text-align: left;
+      h3 {
+        font-size: 24px;
+        color: #480808;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      h5 {
+        color: #480808;
+        font-size: 18px;
+      }
+
+      input::placeholder,
+      input::-webkit-input-placeholder,
+      .ant-select-selection-placeholder {
+        color: #6b829965;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .require-info {
+        background: #faf5f5;
+        border-radius: 2px;
+        color: #6b8299;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .passenger-form {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #faf5f5;
+        .ant-space {
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .top-box {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            .ant-btn {
+              height: 24px;
+              line-height: 24px;
+              padding: 0 10px;
+              font-size: 14px;
+              & > .anticon + span {
+                margin-left: 3px;
+              }
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .ant-form-item {
+          width: 50%;
+          input {
+            font-weight: bold;
+            letter-spacing: 0.4px;
+          }
+          .anticon {
+            color: #8592a6;
+            font-size: 16px;
+          }
+        }
+        .ant-input-borderless,
+        .ant-select-selection-search {
+          border-bottom: 1px solid #ced2d9;
+          padding: 5px 0;
+          font-weight: bold;
+          letter-spacing: 0.6px;
+        }
+        .ant-select-selection-item {
+          font-weight: bold;
+          font-size: 16px;
+          color: #480808;
+          letter-spacing: 0.6px;
+        }
+        .ant-picker {
+          width: 100%;
+          input {
+            border-bottom: 1px solid #ced2d9;
+            height: 31px;
+            color: #480808;
+          }
+        }
+
+        .btn-add-box {
+          padding-top: 20px;
+          display: flex;
+          justify-content: center;
+          border-top: 1px dashed #dadfe6;
+          margin: 20px 0;
+          .btn-add {
+            font-weight: 700;
+            font-size: 14px;
+            .anticon {
+              color: @primary-color;
+              margin-right: -4px;
+            }
+          }
+        }
+      }
+      input {
+        font-size: 16px;
+      }
+    }
+    .bottom-next {
+      box-shadow: 0 2px 8px 0px #dbdbdb;
+      background: #fff;
+      margin-top: 10px;
+      padding: 24px;
+      text-align: left;
+      .agree-rule {
+        margin-bottom: 0px;
+      }
+      .btn-next {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 0 0;
+        background: @second-hover-color;
+        border: 1px solid @second-hover-color;
+        border-radius: 4px;
+        &:hover {
+          background: @second-color;
+          border: 1px solid @second-color;
+        }
+      }
+    }
+
+    .total-price {
+      font-weight: bold;
+      text-align: right;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .price {
+        padding-left: 10px;
+        color: @primary-color;
+        font-size: 24px;
+
+        span {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+  .right-content-wrapper {
+    flex-grow: 1;
+  }
+  .right-content {
+    padding: 16px;
+    background: #fff;
+    margin-left: 16px;
+    text-align: left;
+    border-radius: 8px;
+  }
+  .ant-select-arrow {
+    color: #8592a6;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}

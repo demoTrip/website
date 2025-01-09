@@ -1,0 +1,73 @@
+.searchLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 2;
+
+  .select-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 6;
+    height: 56px;
+    border: 1px solid #dadfe6;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  .ant-select {
+    width: 150px;
+    text-align: left;
+    height: auto;
+    color: #333;
+    font-weight: bold;
+    flex-grow: 1;
+    .ant-select-selection-search-input {
+      color: #333;
+      font-weight: bold;
+    }
+    .ant-select-selection-item {
+      padding: 4px 8px;
+      background: #99344115;
+      flex: initial;
+      color: #333;
+      line-height: initial;
+      box-sizing: border-box;
+      border-radius: 2px;
+      white-space: initial;
+      letter-spacing: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-select-selector {
+      height: auto;
+    }
+  }
+  .icon-plane {
+    background: url("/static/image/home/plane.png");
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .date-pick-wrapper {
+    height: 56px;
+    border: 1px solid #dadfe6;
+    border-radius: 4px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+    flex-grow: 0;
+    background-color: #fff;
+    .ant-picker-input > input {
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+.header-select-popup {
+  .ant-select-item-option {
+    padding: 8px 24px;
+  }
+}

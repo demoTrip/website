@@ -1,0 +1,98 @@
+{
+        "redisSchema": "1805-0200-3U-8790-E&B-WUH-T0-CTU-T1-2-319/0315*2320-1140-3U-8501-E&M-CTU-T1-YVR-T0-2-359|482.00-180.40-370.00-152.12-370.00-152.12|400-CNY/600-CNY/400-CNY$500-CNY/500-CNY/700-CNY$500-CNY/500-CNY/400-CNY",
+        "verifyResult": -2,
+        "priceInfo": {
+            "adultPrice": "{\"salePrice\":\"8767\",\"tax\":\"1487\"}",
+            "childPrice": "{\"salePrice\":\"6584\",\"tax\":\"1290\"}",
+            "infantPrice": "{\"salePrice\":\"6584\",\"tax\":\"1290\"}",
+            "avgPrice": "8667",
+            "totalPrice": "26002"
+        },
+        "penalty": [{
+            "cancelInfo": {
+                "note": "",
+                "formatted": {
+                    "adultList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "1238",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "childList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "1238",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "infantList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "1238",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "concurrentDescription": ""
+                },
+                "originText": {
+                    "adult": false,
+                    "child": false,
+                    "infant": false
+                },
+                "notAllowed": false,
+                "firstTimeChangeFreeNote": null
+            },
+            "changeInfo": {
+                "note": "",
+                "formatted": {
+                    "adultList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "619",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "childList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "619",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "infantList": [{
+                        "specialText": "619",
+                        "timeText": "Before departure",
+                        "specialType": 0
+                    }, {
+                        "specialText": "619",
+                        "timeText": "After departure",
+                        "specialType": 0
+                    }],
+                    "concurrentDescription": ""
+                },
+                "originText": {
+                    "adult": false,
+                    "child": false,
+                    "infant": false
+                },
+                "notAllowed": false,
+                "firstTimeChangeFreeNote": null
+            },
+            "endorsementNote": "No endorsement.",
+            "specialNote": "",
+            "noShowCondition": "",
+            "flagInfoList": [],
+            "partialUseChangeInfo": null
+        }]
+    }

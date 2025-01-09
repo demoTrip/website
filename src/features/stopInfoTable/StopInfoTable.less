@@ -1,0 +1,110 @@
+.stopInfo-table {
+  max-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  background: hsla(0,0%,100%,.8);
+  padding: 16px 24px;
+  h5 {
+    margin-bottom: 6px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #e8e8e8;
+    color: #8592a6;
+    font-size: bold;
+    font-size: 14px;
+    width: 162px;
+  }
+  .top-airline-box {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+    .anticon {
+      margin-right: 5px;
+    }
+  }
+  .flightInfo{
+    color: #8592a6;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 16px;
+  }
+  .bottom-stopInfo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    .left-box {
+    }
+    .ant-timeline-item-head-blue {
+      width: 8px;
+      height: 8px;
+      margin-left: -3px;
+      background: #dadfe6;
+      border: none;
+      border-radius: initial;
+    }
+    .ant-timeline {
+      .ant-timeline-item {
+        display: flex;
+        align-items: center;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+      .ant-timeline-item-label {
+        width: auto;
+        top: initial;
+        left: inherit;
+        width: auto;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+      }
+      .ant-timeline-item-content {
+        top: initial;
+        left: inherit;
+        width: auto;
+        min-height: initial;
+        margin: 0 0 0 30px;
+        b {
+          margin-right: 3px;
+        }
+      }
+      .ant-timeline-item-tail {
+        height: 100%;
+      }
+      .ant-timeline-item-tail, .ant-timeline-item-head {
+        left: 138px;
+      }
+    }
+    .right-box {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      align-self: center;
+      background-color: #faf5f5;
+      font-size: 12px;
+      border-radius: 2px;
+      padding: 4px 8px;
+      justify-content: center;
+      .ant-typography {
+        color: #8592a6;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .anticon {
+        margin-right: 3px;
+      }
+    }
+  }
+}
